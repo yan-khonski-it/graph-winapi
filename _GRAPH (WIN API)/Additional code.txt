@@ -1,0 +1,25 @@
+void GraphEx::drowGraph(HDC hdc)
+{
+
+
+/*for ( ; e_iter!=edge.end();e_iter++)
+	{
+		x1 = node[(*e_iter).id1].centre.x;
+		y1 = node[(*e_iter).id1].centre.y;
+		x2 = node[(*e_iter).id2].centre.x;
+		y2 = node[(*e_iter).id2].centre.y;
+		MoveToEx(hdc, x1, y1, NULL);
+		LineTo(hdc, x2, y2);
+	}*/
+
+	/*n_iter = node.begin();*/
+	/*for( ; n_iter!=node.end();n_iter++)
+	{
+		n_iter->drow_Vertex(hdc);
+	}*/
+
+	for (int i = 0; i < (int) node.size(); i++)
+		node[i].drow_Vertex(hdc);
+
+	delete [] weight_of_edge;
+}
